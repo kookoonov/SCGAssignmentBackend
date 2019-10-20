@@ -24,7 +24,7 @@ app.get('/xyz/:len', function (req, res, next) {
 app.get('/nearby/:position', function (req, res, next) {
   const position = req.params.position;
   const axios = require('axios')
-  const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${position}&radius=1000&type=restaurant&keyword=&key=AIzaSyBcqAN0A9zmWYC-tGYn8ggt2G9Nwx-cC-g`
+  const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${position}&radius=1000&type=restaurant&keyword=&key=AIzaSyBmz2RLwsvdp0nhjBWUJ4abf27Nrn2ksCs`
   const result = axios.get(url, {
     headers: {
       'Access-Control-Allow-Origin': '*',
